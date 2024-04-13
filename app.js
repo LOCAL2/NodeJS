@@ -11,8 +11,7 @@ import('chalk').then(chalk => {
     const port = 3000;
 
     app.get('/', (req, res) => {
-        console.log("Hello world!");
-        res.send('Hello World!');
+        res.render('index', { username: "Woradet", customers: ["Woradet", "Woradet2"] });
     });
 
     app.listen(port, () => {
